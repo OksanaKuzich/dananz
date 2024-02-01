@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -16,7 +16,7 @@ const Header = () => {
             <Link href="/team">Our Team</Link>
             <Link
               href="/contacts"
-              className="text-[14px] font-medium bg-primary-100 text-white py-[14px] px-[32px]"
+              className="text-[14px] font-medium bg-primary-100  hover:bg-primary-90 transition-all text-white py-[14px] px-[32px]"
             >
               Contact Us
             </Link>
