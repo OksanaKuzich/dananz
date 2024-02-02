@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import "tailwindcss/tailwind.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -17,8 +18,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <Header />
-        <main>{children}</main>
+        <div className="min-h-full flex flex-col">
+          <Header />
+          <main className="flex-auto">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

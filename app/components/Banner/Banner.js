@@ -5,7 +5,7 @@ import Link from "next/link";
 const Banner = () => {
   return (
     <section className="py-20 bg-primary-100">
-      <div class="container flex flex-row justify-between">
+      <div className="container flex flex-row justify-between">
         <h2 className="w-[613px] text-[36px]/[1.69] font-semibold text-white">
           Let's discuss making your interior like a dream place!
         </h2>
