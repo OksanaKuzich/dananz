@@ -8,7 +8,7 @@ const Title = ({
 }) => {
   return (
     <div>
-      <div className="flex flex-row gap-[17px] items-center mb-5">
+      <div className="flex flex-row gap-[17px] items-center mb-[20px]">
         <p className="text-[16px] font-medium text-black-100 uppercase">
           {name}
         </p>

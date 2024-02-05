@@ -1,10 +1,9 @@
 import Image from "next/image";
-import Title from "../Title/Title";
 import Link from "next/link";
 
 const Banner = () => {
   return (
-    <section className="py-20 bg-primary-100">
+    <section className="py-[80px] bg-primary-100">
       <div className="container flex flex-row justify-between">
         <h2 className="w-[613px] text-[36px]/[1.69] font-semibold text-white">
           Let's discuss making your interior like a dream place!

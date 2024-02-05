@@ -1,20 +1,19 @@
 import Image from "next/image";
-import Hero from "./components/Hero/Hero";
-import About from "./components/About/About";
-import Service from "./components/Service/Service";
-import Product from "./components/Product/Product";
-import Material from "./components/Material/Material";
-import Banner from "./components/Banner/Banner";
+import MainHero from "./components/blocks/Hero/MainHero";
+import About from "./components/blocks/About/About";
+import Service from "./components/blocks/Service/Service";
+import Product from "./components/blocks/Product/Product";
+import Material from "./components/blocks/Material/Material";
+import Banner from "./components/blocks/Banner/Banner";
 
 export default function Home() {
   return (
     <>
-      <Hero />
+      <MainHero />
       <About />
       <Service />
       <Product />
       <Material />
-      <Banner />
     </>
   );
 }

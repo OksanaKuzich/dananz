@@ -1,25 +1,31 @@
 import Link from "next/link";
 import Image from "next/image";
+import logo from "../../public/logo.svg";
+import halfArrow from "../../public/half-arrow.svg";
+import facebookIcon from "../../public/facebook.svg";
+import instaIcon from "../../public/instagram.svg";
+import tiktokIcon from "../../public/tiktok.svg";
+import youtubeIcon from "../../public/youtube.svg";
 
 const footerData = [
   {
     name: "Facebook",
-    icon: "/facebook.svg",
+    icon: facebookIcon,
     href: "https://www.facebook.com/",
   },
   {
     name: "Instagram",
-    icon: "/instagram.svg",
+    icon: instaIcon,
     href: "https://www.instagram.com/",
   },
   {
     name: "TikTok",
-    icon: "/tiktok.svg",
+    icon: tiktokIcon,
     href: "https://www.tiktok.com/",
   },
   {
     name: "YouTube",
-    icon: "/youtube.svg",
+    icon: youtubeIcon,
     href: "https://www.youtube.com/",
   },
 ];
@@ -30,9 +36,8 @@ const Footer = () => {
       <div className="container flex flex-row justify-between">
         <div>
           <Link href="/">
-            <Image src="/logo.svg" width={126} height={54} alt="Logo" />
+            <Image src={logo} alt="Logo" />
           </Link>
-
           <p className="text-[36px]/[1.69] font-semibold max-w-[480px]">
             One of the best furniture agency
           </p>
@@ -45,9 +50,7 @@ const Footer = () => {
             </p>
             <label className="relative">
               <Image
-                src="/half-arrow.svg"
-                width={23}
-                height={9}
+                src={halfArrow}
                 alt="Right arrow icon"
                 className="absolute top-[50%] right-0 transform -translate-y-1/2"
               />
@@ -61,17 +64,19 @@ const Footer = () => {
           </div>
           <div className="mt-[40px] max-w-[195px]">
             <p className="text-16 mb-[15px]">Follow us On</p>
-            <div className="flex flex-row gap-[25px]">
+            <ul className="flex flex-row gap-[25px]">
               {footerData.map(({ name, icon, href }, idx) => (
-                <Link
-                  key={idx}
-                  href={href}
-                  className="flex justify-center items-center w-[32px] h-[32px] bg-grayLight rounded-50 p-1 hover:bg-primary-10 transition-all"
-                >
-                  <Image src={icon} width={20} height={20} alt={name} />
-                </Link>
+                <li key={idx}>
+                  <a
+                    href={href}
+                    target="_blank"
+                    className="flex justify-center items-center w-[32px] h-[32px] bg-grayLight rounded-50 p-1 hover:bg-primary-10 transition-all"
+                  >
+                    <Image src={icon} width={20} height={20} alt={name} />
+                  </a>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </div>
       </div>

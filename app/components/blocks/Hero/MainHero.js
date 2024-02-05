@@ -1,10 +1,12 @@
 import Image from "next/image";
-import { heroData } from "../Table/data";
-import Table from "../Table/Table";
+import { heroData } from "../../Table/data";
+import Table from "../../Table/Table";
 
-const Hero = () => {
+const MainHero = () => {
+  let year = new Date().getFullYear();
+
   return (
-    <section className="pt-[58px] pb-20">
+    <section className="pt-[58px] pb-[80px]">
       <div className="container relative">
         <div className="relative mb-[46px]">
           <h1 className="text-[72px] font-bold text-black-50 w-[680px]">
@@ -16,7 +18,7 @@ const Hero = () => {
               writingMode: "vertical-rl",
             }}
           >
-            <p>2022</p>
+            <p>{year}</p>
             <p>ALL RIGHT RESERVED</p>
           </div>
         </div>
@@ -35,4 +37,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default MainHero;
