@@ -1,6 +1,7 @@
 import Content from "../../components/blocks/Content/Content";
 import Hero from "../../components/blocks/Hero/Hero";
 import Gallery from "../../components/blocks/Gallery/Gallery";
+import { galleryDataMinimalist } from "@/app/components/blocks/Gallery/data";
 
 export default function Minimalist() {
   return (
@@ -12,7 +13,7 @@ export default function Minimalist() {
         alt="Minimalist room section"
       />
       <Content />
-      <Gallery />
+      <Gallery data={galleryDataMinimalist} />
     </>
   );
 }

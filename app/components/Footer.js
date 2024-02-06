@@ -66,7 +66,7 @@ const Footer = () => {
             <p className="text-16 mb-[15px]">Follow us On</p>
             <ul className="flex flex-row gap-[25px]">
               {footerData.map(({ name, icon, href }, idx) => (
-                <li key={idx}>
+                <li key={"footer" + idx}>
                   <a
                     href={href}
                     target="_blank"

@@ -20,12 +20,7 @@ const Card = ({
         marginTop: marginTop ? marginTop : "20px",
       }}
     >
-      <Image
-        src={image}
-        width={883}
-        height={525}
-        alt="Kitchen and dining room interior"
-      />
+      <Image src={image} alt="Kitchen and dining room interior" />
       <div className="pb-[94px]">
         {title && (
           <p className="text-[24px] font-semibold text-black-50 mb-[20px]">
