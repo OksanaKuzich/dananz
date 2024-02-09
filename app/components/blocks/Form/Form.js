@@ -66,7 +66,7 @@ const htmlForm = () => {
 
           <button
             type="submit"
-            className="inline-block mx-auto text-white text-[14px] font-medium bg-primary-100 py-[14px] px-[32px]"
+            className="inline-block mx-auto text-white text-[14px] font-medium bg-primary-100 hover:bg-primary-90 py-[14px] px-[32px] transition-all"
           >
             Send Massage
           </button>
