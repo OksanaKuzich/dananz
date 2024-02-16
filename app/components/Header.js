@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="container flex flex-row lg:flex-col xl:flex-row items-center justify-between gap-[15px] xl:gap-0 py-[20px] xl:py-[42px]">
+      <div className="container flex flex-row lg:flex-col xl:flex-row items-center justify-between content-between 2xl:content-start gap-[15px] xl:gap-0 py-[20px] xl:py-[42px] flex-wrap">
         <Link href="/" className="mr-auto">
           <Image src={logo} alt="Logo" />
         </Link>
