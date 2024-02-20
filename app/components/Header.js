@@ -15,7 +15,7 @@ const Header = () => {
           <Image src={logo} alt="Logo" />
         </Link>
         <nav className="hidden lg:block">
-          <ul className="flex items-center justify-between lg:gap-[72px] text-black-50 text-[16px]">
+          <ul className="flex items-center justify-between lg:gap-[72px] text-black-50 text-16">
             <li>
               <Link href="/" className={pathname == "/" ? "font-semibold" : ""}>
                 Home
@@ -56,7 +56,7 @@ const Header = () => {
             <li>
               <Link
                 href="/contacts"
-                className="text-[14px] font-medium bg-primary-100  hover:bg-primary-90 transition-all text-white py-[14px] px-[32px] whitespace-nowrap"
+                className="text-14 font-medium bg-primary-100  hover:bg-primary-90 transition-all text-white py-[14px] px-[32px] whitespace-nowrap"
               >
                 Contact Us
               </Link>

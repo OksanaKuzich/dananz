@@ -12,6 +12,17 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
+    fontSize: {
+      14: "14px",
+      16: "16px",
+      18: "18px",
+      28: "28px",
+      36: "36px",
+      48: "48px",
+      52: "52px",
+      60: "60px",
+      72: "72px",
+    },
     colors: {
       primary: {
         100: "#2C3878",

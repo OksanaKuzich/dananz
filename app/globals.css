@@ -4,16 +4,15 @@
 
 .container {
   max-width: 1440px;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
 
-  @media (max-width: 1439px) {
-    padding-left: 50px;
-    padding-right: 50px;
-    }
-}
+  @media (min-width: 1440px) {
+    padding-left: 120px;
+    padding-right: 120px;    }
+}c
 
 html, body {
   font-size: 18px;
@@ -31,8 +30,4 @@ html, body {
     position: relative;
     transform: translateX(-20px);
   }
-}
-
-a.active {
-  color: #ff0000;
 }
