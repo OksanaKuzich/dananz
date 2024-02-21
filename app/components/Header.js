@@ -14,8 +14,8 @@ const Header = () => {
         <Link href="/" className="mr-auto">
           <Image src={logo} alt="Logo" />
         </Link>
-        <nav className="hidden lg:block">
-          <ul className="flex items-center justify-between lg:gap-[72px] text-black-50 text-16">
+        <nav className="hidden lg:block w-full">
+          <ul className="flex items-center justify-between xl:gap-[72px] text-black-50 text-16">
             <li>
               <Link href="/" className={pathname == "/" ? "font-semibold" : ""}>
                 Home

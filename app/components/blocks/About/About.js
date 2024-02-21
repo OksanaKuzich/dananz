@@ -6,7 +6,7 @@ import aboutImg from "../../../../public/about.jpg";
 
 const About = () => {
   return (
-    <section className="py-[80px]">
+    <section className="py-[40px] md:py-[80px]">
       <div className="container relative">
         <Title
           name="About"
@@ -18,7 +18,7 @@ const About = () => {
           person="/person.png"
           personName="Arga Danaan"
           personRole="CEO of Dananz"
-          marginTop="60px"
+          marginTop="xl:mt-[60px]"
         />
       </div>
     </section>

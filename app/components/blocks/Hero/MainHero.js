@@ -6,7 +6,7 @@ const MainHero = () => {
   let year = new Date().getFullYear();
 
   return (
-    <section className="pt-[58px] pb-[80px]">
+    <section className="pt-[58px] pb-[40px] md:pb-[80px]">
       <div className="container relative">
         <div className="relative mb-[46px]">
           <h1 className="text-36 lg:text-60 xl:text-72/[1.402] font-bold text-black-50 max-w-[680px]">
@@ -29,7 +29,7 @@ const MainHero = () => {
           alt="Kitchen interior"
         />
         <div className="absolute top-[120px] md:top-[80px] lg:top-[50px] right-[50px] xl:right-[120px] w-[380px] md:w-[500px] lg:w-[250px] xl:w-[683px] h-[2px] bg-black-100"></div>
-        <div className="absolute top-[140px] right-[100px] xl:right-[262px]">
+        <div className="absolute top-[140px] right-[60px] md:right-[100px] xl:right-[262px]">
           <Table />
         </div>
       </div>
