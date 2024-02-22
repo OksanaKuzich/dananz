@@ -10,11 +10,11 @@ const Header = () => {
 
   return (
     <header>
-      <div className="container flex flex-row lg:flex-col xl:flex-row items-center justify-between content-between 2xl:content-start gap-[15px] xl:gap-0 py-[20px] xl:py-[42px] flex-wrap">
+      <div className="container flex flex-row lg:flex-col xl:flex-row items-center justify-between content-between 2xl:content-start gap-[15px] xl:gap-0 py-[20px] xl:py-[42px] flex-wrap xl:flex-nowrap">
         <Link href="/" className="mr-auto">
           <Image src={logo} alt="Logo" />
         </Link>
-        <nav className="hidden lg:block w-full">
+        <nav className="hidden lg:block w-full xl:w-auto">
           <ul className="flex items-center justify-between xl:gap-[72px] text-black-50 text-16">
             <li>
               <Link href="/" className={pathname == "/" ? "font-semibold" : ""}>

@@ -7,16 +7,16 @@ import servImg from "../../../../public/service.jpg";
 
 const Service = () => {
   return (
-    <section className="py-[80px]">
+    <section className="py-[40px] md:py-[80px]">
       <div className="container">
         <Title
           name="SERVICE"
           title="Attractive furniture with the best quality"
           subtitle="Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations."
-          subWidth="471px"
+          subWidth="lg:w-[471px]"
         />
-        <div className="relative">
-          <ul className="absolute top-[-50px] left-0 flex flex-col gap-[36px] w-[883px] text-black-50 font-semibold bg-white pr-10 pb-10">
+        <div className="relative mt-[40px] xl:mt-0">
+          <ul className="lg:absolute top-[-15px] xl:top-[-50px] left-0 flex flex-col gap-[36px] w-full  lg:w-[600px] xl:w-[883px] text-black-50 font-semibold bg-white lg:pr-10 pb-10">
             {serviceData.map(({ number, text }, idx) => (
               <li key={"serv" + idx}>
                 <Link
@@ -35,7 +35,7 @@ const Service = () => {
           <Image
             src={servImg}
             alt="The interior of the guest room"
-            className="mt-[88px] ml-[124px]"
+            className="lg:pl-[50px] xl:pl-0 xl:mt-[88px] xl:ml-[124px]"
           />
         </div>
       </div>

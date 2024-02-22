@@ -32,20 +32,20 @@ const footerData = [
 
 const Footer = () => {
   return (
-    <footer className="py-[80px]">
-      <div className="container flex flex-row justify-between">
+    <footer className="py-[40px] md:py-[80px]">
+      <div className="container flex flex-col md:flex-row justify-between gap-[30px] md:gap-0">
         <div>
-          <Link href="/">
+          <Link href="/" className="block mb-[20px] md:mb-0">
             <Image src={logo} alt="Logo" />
           </Link>
-          <p className="text-[36px]/[1.69] font-semibold max-w-[480px]">
+          <p className="text-28 md:text-36/[1.69] font-semibold max-w-[480px]">
             One of the best furniture agency
           </p>
         </div>
-        <div className="flex flex-col items-end max-w-[440px]">
+        <div className="flex flex-col items-start md:items-end max-w-[440px]">
           <div>
             <p className="flex flex-row items-center gap-[10px] mb-[8px]">
-              <span className="block w-[14px] h-[14px] bg-black-50 rounded-50"></span>
+              <span className="block w-[14px] h-[14px] bg-black-50 rounded-50 flex-shrink-0"></span>
               Enter your email to get the laterst news
             </p>
             <label className="relative">

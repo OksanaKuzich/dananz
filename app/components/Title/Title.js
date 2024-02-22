@@ -4,7 +4,7 @@ const Title = ({
   titWidth = "100%",
   subtitle = false,
   subWidth = "100%",
-  direction = "column",
+  direction = "col",
 }) => {
   return (
     <div>
@@ -13,9 +13,10 @@ const Title = ({
         <div className="w-[530px] h-[2px] bg-black-100"></div>
       </div>
       <div
-        className="flex"
+        className={`flex ${(direction = "row"
+          ? "flex-col lg:flex-" + direction
+          : direction)}`}
         style={{
-          flexDirection: direction,
           justifyContent: (direction = "row" ? "space-between" : "flex-start"),
         }}
       >
@@ -28,7 +29,10 @@ const Title = ({
           </h2>
         )}
         {subtitle && (
-          <p className="mt-[24px]" style={{ width: subWidth }}>
+          <p
+            className={`mt-[24px] ${subWidth ? "w-full " + subWidth : "100%"}`}
+            // style={{ width: subWidth }}
+          >
             {subtitle}
           </p>
         )}
