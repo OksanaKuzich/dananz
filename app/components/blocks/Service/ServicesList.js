@@ -3,7 +3,7 @@ import { serviceData, servicesListData } from "./data";
 
 const ServicesList = () => {
   return (
-    <section className="pt-[50px] pb-[100px]">
+    <section className="py-[40px] md:pt-[50px] md:pb-[100px]">
       <div className="container">
         <Title
           name="SERVICE"
@@ -11,7 +11,7 @@ const ServicesList = () => {
           subtitle="Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations."
           subWidth="471px"
         />
-        <ul className="flex flex-row gap-[18px] justify-between mt-[40px]">
+        <ul className="flex flex-col lg:flex-row gap-[18px] justify-between mt-[40px]">
           {servicesListData.map(({ name, text, icon: Icon }, idx) => (
             <li
               key={"servlist" + idx}
