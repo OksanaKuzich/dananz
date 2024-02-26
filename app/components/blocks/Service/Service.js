@@ -7,7 +7,7 @@ import servImg from "../../../../public/service.jpg";
 
 const Service = () => {
   return (
-    <section className="py-[40px] md:py-[80px]">
+    <section className="py-[40px] md:py-[80px] reveal">
       <div className="container">
         <Title
           name="SERVICE"

@@ -4,7 +4,7 @@ import { teamData } from "./data";
 
 const TeamList = () => {
   return (
-    <section className="py-[50px]">
+    <section className="py-[40px] md:py-[50px]">
       <div className="container">
         <Title
           name="Designer"
@@ -12,7 +12,7 @@ const TeamList = () => {
           subtitle="Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations."
           subWidth="471px"
         />
-        <ul className="grid grid-cols-4 gap-[24px] mt-[80px]">
+        <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[24px] mt-[80px] justify-items-center">
           {teamData.map(({ name, position, image }, idx) => (
             <li
               key={"team" + idx}

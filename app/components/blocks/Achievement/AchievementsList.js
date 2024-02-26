@@ -6,18 +6,18 @@ import { achievementData } from "./data";
 
 const AchievementList = () => {
   return (
-    <section className="py-[50px]">
+    <section className="py-[40px] md:py-[50px]">
       <div className="container">
         <Title name="ACHIEVEMENT" />
         <ul className="flex flex-col gap-[40px] mt-[20px]">
           {achievementData.map(({ title, text, image, alt }, idx) => (
             <li
               key={"achive" + idx}
-              className="flex flex-row gap-[120px] items-center"
+              className="flex flex-col-reverse xl:flex-row gap-[30px] xl:gap-[120px] items-center"
             >
               <Image src={image} alt={alt} />
               <div>
-                <p className="text-[24px]/[1.416] font-semibold text-black-50 mb-[20px]">
+                <p className="text-24/[1.416] font-semibold text-black-50 mb-[20px]">
                   {title}
                 </p>
                 <p>{text}</p>

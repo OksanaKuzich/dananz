@@ -34,8 +34,10 @@ const Card = ({
         </Link>
       </div>
       <div
-        className="absolute top-[27px] right-[-25px] xl:right-[116px] flex flex-row gap-[20px] items-center md:w-[276px] h-[90px] bg-white py-[17px] px-[20px] drop-shadow-[10px_10px_40px_rgba(0,0,0,0.05)]"
-        style={positionImage === "right" ? { left: "121px" } : {}}
+        className={`absolute top-[27px] right-[-25px] xl:right-[116px] flex flex-row gap-[20px] items-center md:w-[276px] h-[90px] bg-white py-[17px] px-[20px] drop-shadow-[10px_10px_40px_rgba(0,0,0,0.05)] ${
+          positionImage === "right" ? "rigth-0 xl:left-[121px]" : ""
+        }`}
+        // style={positionImage === "right" ? { left: "121px" } : {}}
       >
         <Image
           src={person}

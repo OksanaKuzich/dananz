@@ -7,7 +7,7 @@ import arrow from "../../../../public/arrow-right.svg";
 const Product = () => {
   return (
     <section className="py-[40px] md:py-[80px]">
-      <div className="container">
+      <div className="container reveal">
         <Title
           name="PRODUCT"
           title="Choose your product themes"

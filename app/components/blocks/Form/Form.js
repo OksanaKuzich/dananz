@@ -3,7 +3,7 @@ const htmlForm = () => {
     <section className="pb-[50px]">
       <div className="container">
         <form className="max-w-[840px] mx-auto flex flex-col">
-          <div className="flex flex-row gap-[14px] justify-between">
+          <div className="flex flex-col md:flex-row gap-[14px] justify-between">
             <label
               htmlFor="firstName"
               className="flex flex-col text-black-50 font-medium basis-1/2"

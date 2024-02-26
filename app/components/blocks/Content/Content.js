@@ -1,7 +1,7 @@
 const Content = () => {
   return (
-    <section className="py-[50px]">
-      <div className="container grid grid-cols-2 gap-[32px]">
+    <section className="py-[40px] md:py-[50px]">
+      <div className="container grid grid-cols-1 md:grid-cols-2 gap-[32px]">
         <div>
           <h2 className="text-[24px] font-semibold text-black-50 mb-[24px]">
             Project Overview

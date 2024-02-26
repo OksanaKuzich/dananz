@@ -4,7 +4,7 @@ import { cardsData } from "./data";
 
 const CardList = () => {
   return (
-    <section className="py-[50px]">
+    <section className="py-[40px] md:py-[50px]">
       <div className="container">
         <Title name={"Portfolio"} />
         <ul className="flex flex-col gap-[40px]">

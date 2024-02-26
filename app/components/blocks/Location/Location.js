@@ -4,7 +4,7 @@ import { locationData } from "./data";
 
 const Location = () => {
   return (
-    <section className="pt-[50px] pb-[170px]">
+    <section className="py-[40px] md:pt-[50px] md:pb-[170px]">
       <div className="container relative">
         <div>
           <Title
@@ -25,8 +25,8 @@ const Location = () => {
             +62 815 002 1000
           </Link>
         </div>
-        <div className="absolute top-[32px] left-[592px] w-[728px]">
-          <ul className="grid grid-cols-2 gap-x-[60px] gap-y-[40px] relative top-[32px] left-[-50px]">
+        <div className="xl:absolute top-[32px] left-[592px] max-w-[728px] mt-[40px] xl:mt-0">
+          <ul className="grid grid-cols-1 lg:grid-cols-2 gap-x-[60px] gap-y-[40px] relative xl:top-[32px] xl:left-[-50px]">
             {locationData.map(({ city, text }, idx) => (
               <li key={"loc" + idx}>
                 <p className="text-[24px] font-semibold text-black-50 mb-[30px]">
