@@ -7,7 +7,7 @@ const MainHero = () => {
 
   return (
     <section className="py-[40px] md:pt-[58px] md:pb-[80px]">
-      <div className="container relative reveal">
+      <div className="container relative">
         <div className="relative mb-[46px]">
           <h1 className="text-36 lg:text-60 xl:text-72/[1.402] font-bold text-black-50 max-w-[680px]">
             Design your interor with high quality

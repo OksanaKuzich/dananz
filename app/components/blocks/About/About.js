@@ -7,7 +7,7 @@ import aboutImg from "../../../../public/about.jpg";
 const About = () => {
   return (
     <section className="py-[40px] md:py-[80px]">
-      <div className="container relative reveal">
+      <div className="container relative">
         <Title
           name="About"
           title="“We're one of the best furniture agency. Prioritizing customers and making purchases easy are the hallmarks of our agency.”"

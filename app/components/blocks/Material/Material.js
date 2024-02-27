@@ -8,7 +8,7 @@ import material3 from "../../../../public/material3.jpg";
 const Material = () => {
   return (
     <section className="pt-[40px] md:pt-[80px] pb-[60px] md:pb-[167px]">
-      <div className="container flex flex-col xl:flex-row reveal">
+      <div className="container flex flex-col xl:flex-row">
         <div className="pt-0 xl:pt-[50px]">
           <Title
             name="Material"
